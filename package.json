@@ -1,0 +1,31 @@
+{
+  "name": "Tadpole",
+  "version": "1.0.0",
+  "description": "![tadpole](https://media.giphy.com/media/3o6fJh1uKQDy3eUQec/giphy.gif)",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js",
+    "db:mirgrate": "npx sequlize-cli db:migrate",
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.generalassemb.ly/cgibsonmm/Tadpole.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "local-storage": "^2.0.0",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.19.4",
+    "pg": "^7.12.1",
+    "sequelize": "^5.21.1",
+    "sequelize-cli": "^5.5.1"
+  }
+}
