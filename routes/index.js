@@ -1,5 +1,5 @@
 const { Router } = require('express');
-const seqeulize = require('sequelize')
+const sequelize = require('sequelize')
 const routes = Router();
 const controllers = require('../controllers')
 const sentenceController = require('../controllers/sentences')
